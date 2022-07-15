@@ -6,6 +6,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MICEGothic Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
   color : black;
@@ -25,6 +32,8 @@ header .contents #logo{
 body{
   height: 4000px;
   background-color: #fefefe;
+  margin : 0;
+  padding: 0;
   
 }
 
@@ -32,10 +41,10 @@ body{
 /* HEADER */
 header{
   position : fixed;
-  width : 100%;
+  width:100%;
   height : 120px;
   background-color: #42A4FF;
-  
+  z-index: 1000;
 }
 
 header .contents{
@@ -50,35 +59,114 @@ header .contents .content{
   text-align: center;
   align-items: center;
   width : 300px;
-  height : 120px;
+  height : 119px;
   box-sizing: border-box;
   border-radius: 14px;
   
 }
 
-header .contents .content:hover{
+header .contents .content:nth-child(1):hover{
   transition: 0.1s;
   background-color: #317ec5;
   box-sizing: border-box;
-  border: 4px solid #42A4FF;
+   border: 4px solid #42A4FF; 
 }
+
+header .contents .content:nth-child(2):hover{
+  transition: 0.1s;
+  background-color: #317ec5;
+  box-sizing: border-box;
+   border: 4px solid #42A4FF; 
+}
+
+
+header .contents .content:nth-child(4):hover{
+  transition: 0.1s;
+  background-color: #317ec5;
+  box-sizing: border-box;
+   border: 4px solid #42A4FF; 
+}
+
+
 
 header .contents .content a {
   display : block;
   width: 300px;
-  height: 120px;
-  margin-top: 40px;
+  height: 60px;
   color : #fefefe;
   font-size : 38px;
+  justify-content: center;
+  padding-top: 30px;
   font-family: 'CookieRunOTF-Bold';
 }
 
+header .promotion{
+  border-radius: 12px;
+  position: absolute;
+  top: 135px;
+  right: 30px;
+  width : 160px;
+  height: 280px;
+  background-image: url("../image/promotion.png");
+  background-size: cover;
+  border : 4px solid gainsboro;
+}
 
 
+header .contents #identity{
+  background-color: #42A4FF;
+  box-sizing: border-box;
+  width : 300px;
+  height : 119px;
+}
 
+header .contents #identity:hover{
+  
+}
 
+header .contents .content .identity_image{
+  margin-top : 25px;
+  width:65px;
+  height:65px;
+  background-size: cover;
+  background-image: url("../image/Profile.png");
+  border-radius: 100px;
 
+}
 
+header .contents .content .UserName{
+  font-size: 24px;
+  font-weight: 600;
+  position : absolute;
+  bottom : 62px;
+  right : 73px;
+  color:#fefefe;
+}
+
+header .contents .content progress{
+  position : absolute;
+  bottom:42px;
+  right : 63px;
+}
+
+header .contents #identity .change_pw{
+  position : absolute;
+  right : 50px;
+  width : 200px;
+  height : 20px;
+  bottom: 22px;
+}
+
+header .contents #identity .change_pw a{
+  display: inline;
+  font-size: 11px;
+  font-family: sans-serif;
+  color : #fbfbfb;
+}
+header .contents #identity .change_pw .line{
+  font-size : 12px;
+  color : #317BBF;
+}
 
 
 
