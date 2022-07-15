@@ -12,6 +12,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src = "../js/app.js"></script>
 
   <title>SPGM</title>
@@ -23,8 +24,20 @@
       <div class="content"><a href="#">개발코스</a></div>
       <div class="content" id ="logo"></div>
       <div class="content"><a href="#">게시판</a></div>
-      <div class="content"><a href = "#">고객센터</a></div>
+      <div class="content" id = "identity">
+        <div class = 'identity_image'></div>
+        <p class = "UserName">USER [LV : 1]</p>
+        <progress value ="20" max = "100"></progress>
+        <div class ="change_pw">
+          <a href ="#">비밀번호 변경</a> <span class ="line">|</span>
+          <a href ="#">마이페이지</a>
+        </div>
+      </div>
     </div>
+    <div class="promotion"></div>
   </header>
+
+  
+
 </body>
 </html>
