@@ -18,6 +18,21 @@ a {
   color : black;
 }
 
+.look{
+  text-align: center;
+  width : 100px;
+  height :30px;
+  background-color: gainsboro;
+  border: 2px solid black;
+  cursor:pointer;
+  position : absolute;
+  left:0;
+  right: 0;
+  top : 420px;
+  margin : auto;
+}
+
+
 header .contents #logo{
   background-image: url("../image/SPGM.png");
   width : 210px;
@@ -27,6 +42,7 @@ header .contents #logo{
   background-repeat: no-repeat;
   box-sizing: border-box;
   border : 10px solid gainsboro;
+  z-index: 1000;
 }
 
 body{
@@ -100,18 +116,6 @@ header .contents .content a {
   font-family: 'CookieRunOTF-Bold';
 }
 
-header .promotion{
-  border-radius: 12px;
-  position: absolute;
-  top: 135px;
-  right: 30px;
-  width : 160px;
-  height: 280px;
-  background-image: url("../image/promotion.png");
-  background-size: cover;
-  border : 4px solid gainsboro;
-}
-
 
 header .contents #identity{
   background-color: #42A4FF;
@@ -168,9 +172,114 @@ header .contents #identity .change_pw .line{
   color : #317BBF;
 }
 
+/* POSTER */
+
+.post{
+  background-color: rgb(113, 113, 255);
+  width : 100%;
+  height : 650px;
+  position: relative;
+  top: 120px;
+  left : 0;
+  right : 0;
+  margin: 0 auto;
+}
+
+/* COURSE */
+
+
+.course{
+  position:relative;
+  top:110px;
+  height : 950px;
+  background-color: red;
+}
+
+.course .inner{
+  position: relative;
+  width: 100%;
+  height:1450px;
+  background-color: #1182ba;
+  display : flex;
+}
 
 
 
+.course .inner .front{
+  box-sizing: border-box;
+  border: 8px solid gainsboro;
+  width : 520px;
+  height : 520px;
+  border-radius: 24px;
+  background-image: url("../image/front.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2s;
+  position : absolute;
+  top: 70px;
+  left : -320px;
+  opacity : 0.1;
+  
+}
 
+.course .inner .back{
+  box-sizing: border-box;
+  border: 8px solid gainsboro;
+  width : 520px;
+  height : 520px;
+  border-radius: 24px;
+  background-image : url("../image/back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+  position : absolute;
+  top: 70px;
+  right : -320px;
+  opacity : 0.1;
+}
 
+.course .inner .aos{
+  box-sizing: border-box;
+  border: 8px solid gainsboro;
+  width : 520px;
+  height : 520px;
+  border-radius: 24px;
+  background-image : url("../image/aos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+  position : absolute;
+  top: 760px;
+  left : -320px;
+  opacity : 0.1;
+}
 
+.course .inner .ios{
+  box-sizing: border-box;
+  border: 8px solid gainsboro;
+  width : 520px;
+  height : 520px;
+  border-radius: 24px;
+  background-image : url("../image/ios.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+  position : absolute;
+  top: 760px;
+  right : -320px;
+  opacity : 0.1;
+}
+
+.course .inner .front.fade-in,
+.course .inner .aos.fade-in{
+  transform: translate(420px , 0);
+  transition: 1s;
+  opacity: 1;
+}
+
+.course .inner .back.fade-in,
+.course .inner .ios.fade-in{
+  transform: translate(-420px , 0);
+  transition: 1s;
+  opacity: 1;
+}

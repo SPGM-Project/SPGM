@@ -1,16 +1,21 @@
-const fadeTeam = document.querySelector(".visual .inner #team_name");
-const fadeIntro = document.querySelector(".visual .inner #intro1");
+const course = document.querySelector('.course .inner');
+const front = document.querySelector('.course .inner .front');
+const back = document.querySelector('.course .inner .back');
+const aos = document.querySelector('.course .inner .aos');
+const ios = document.querySelector('.course .inner .ios');
+
 let count = 0;
+const FADE_IN = ' fade-in';
 
-
-setInterval(introTeam,1000);
-
-function introTeam(){
-  if(count < 3){
+function handleScroll(){
+  if(count == 0){
+  front.className += FADE_IN;
+  back.className += FADE_IN;
+  aos.className += FADE_IN;
+  ios.className += FADE_IN;
   count++;
-  fadeIntro.className += 'fade-in';
-  } else {
-    clearInterval(introTeam);
-  }
+  } 
 }
 
+
+course.addEventListener("mouseover", handleScroll);
