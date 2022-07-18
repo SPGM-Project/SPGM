@@ -121,7 +121,7 @@ header .contents #identity{
 }
 
 header .contents #identity:hover{
-  
+  cursor: pointer;
 }
 
 header .contents .content .identity_image{
