@@ -19,18 +19,22 @@ a {
 }
 
 .look{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
+  font-weight: 600;
   width : 100px;
   height :30px;
   background-color: gainsboro;
-  border: 2px solid black;
+  border : 4px solid gray;
+  border-radius: 4px;
   cursor:pointer;
   position : absolute;
   left:0;
   right: 0;
-  top : 420px;
+  top : 440px;
   margin : auto;
 }
+
 
 
 header .contents #logo{
@@ -201,17 +205,17 @@ header .contents #identity .change_pw .line{
   height:1450px;
   background-color: #1182ba;
   display : flex;
+  overflow: hidden;
 }
 
 
 
 .course .inner .front{
   box-sizing: border-box;
-  border: 8px solid gainsboro;
   width : 520px;
   height : 520px;
   border-radius: 24px;
-  background-image: url("../image/front.png");
+  background-image: url("../image/front_course.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: 2s;
@@ -219,16 +223,16 @@ header .contents #identity .change_pw .line{
   top: 70px;
   left : -320px;
   opacity : 0.1;
+  overflow: hidden;
   
 }
 
 .course .inner .back{
   box-sizing: border-box;
-  border: 8px solid gainsboro;
   width : 520px;
   height : 520px;
   border-radius: 24px;
-  background-image : url("../image/back.png");
+  background-image : url("../image/back_course.png");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 2s;
@@ -236,6 +240,7 @@ header .contents #identity .change_pw .line{
   top: 70px;
   right : -320px;
   opacity : 0.1;
+  overflow: hidden;
 }
 
 .course .inner .aos{
@@ -252,6 +257,7 @@ header .contents #identity .change_pw .line{
   top: 760px;
   left : -320px;
   opacity : 0.1;
+  overflow: hidden;
 }
 
 .course .inner .ios{
@@ -268,6 +274,7 @@ header .contents #identity .change_pw .line{
   top: 760px;
   right : -320px;
   opacity : 0.1;
+  overflow: hidden;
 }
 
 .course .inner .front.fade-in,
@@ -283,3 +290,80 @@ header .contents #identity .change_pw .line{
   transition: 1s;
   opacity: 1;
 }
+
+.class {
+  position:relative;
+  width : 100%;
+  height:600px;
+  top : 600px;
+}
+
+.class .swiper-container{
+  width : 100%;
+  position : absolute;
+  height : 150px;
+  justify-content: space-between;
+  left: 0;
+  right : 0;
+  margin : auto;
+  background-color: burlywood;
+  border : 6px solid brown;
+  box-sizing: border-box;
+}
+.class .swiper-container .swiper-wrapper{
+  height:100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.class .swiper-container .swiper-wrapper .swiper-slide {
+  opacity : 1;
+  transition: opacity 1s;
+  position: relative;
+  margin : 0 15px;
+}
+
+.class .swiper-container .swiper-wrapper .swiper-slide img{
+  width: 126px;
+  height: 126px;
+  border-radius: 24px;
+  margin-top : 5px;
+}
+
+
+.class .swiper-container2{
+  width : 100%;
+  position : absolute;
+  height : 150px;
+  justify-content: space-between;
+  left: 0;
+  right : 0;
+  margin : auto;
+  top : 150px;
+  background-color: burlywood;
+  border : 6px solid brown;
+  border-top : none;
+  box-sizing: border-box;
+}
+.class .swiper-container2 .swiper-wrapper{
+  height:100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.class .swiper-container2 .swiper-wrapper .swiper-slide {
+  opacity : 1;
+  transition: opacity 1s;
+  position: relative;
+  margin : 0 15px;
+}
+
+.class .swiper-container2 .swiper-wrapper .swiper-slide img{
+  width: 130px;
+  height: 130px;
+  border-radius: 24px;
+  margin-top : 10px;
+}
+
