@@ -22,6 +22,9 @@
     font-weight: normal;
     font-style: normal;
 }
+header .contents .content .identity_image{
+    margin-left: 0px;
+}
 body{
     width: max-content;
     overflow-x: hidden;
