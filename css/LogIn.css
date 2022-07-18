@@ -119,3 +119,11 @@ body{
     color: #317ec5;
     cursor: pointer;
 }
+.signUp:hover{
+    color: #317ec5;
+    cursor: pointer;
+}
+.signUp{
+    position: relative;
+    top: 20px;
+}

@@ -1,6 +1,7 @@
 const forgot = document.querySelector(".forgot");
 const Inputs = document.querySelector(".Inputs");
 const logBTN = document.querySelector(".LogInBTN");
+
 function handleAlert(){
     alert("그걸 까먹냐");
 }
