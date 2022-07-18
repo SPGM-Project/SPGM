@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <script src="../js/LogIn.js" defer></script>
+    <link rel="stylesheet" href="../css/LogIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" href="../image/favicon.ico">
+    <script 
+    src="https://kit.fontawesome.com/0d3908869d.js" 
+    crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="login">
+        <div class="moreBehind">
+            <div class="hide"><a></a></div> 
+            <div class="behind">
+                <a href="../html/main.html">
+                    <div class="content" id ="logo"></div>
+                </a>
+            </div>
+        </div>
+        <div class="Inputs">
+            <div class="id">
+                <p>아이디</p>
+                <input type="text" class="Input" placeholder="id입력">
+            </div>
+            <div class="pw">
+                <p>비밀번호</p>
+                <input type="password" class="Input" placeholder="비밀번호 입력">
+            </div>
+            <div class="pwR">
+                <p>비밀번호 재확인</p>
+                <input type="password" class="Input" placeholder="비밀번호 다시 입력">
+            </div>
+            <div class="name">
+                <p>이름</p>
+                <input type="text" class="Input" placeholder="이름 입력">
+            </div>
+            <div class="birth">
+                <p>생년월일</p>
+                <input type="date" class="Input">
+            </div>
+            <div class="gender">
+                <p>성별</p>
+                <div class="genderSel">
+                    <p>남</p>
+                    <input type="checkbox" class="Input">
+                    <p>여</p>
+                    <input type="checkbox" class="Input">   
+                </div>
+            </div>
+            <div class="email">
+                <p>이메일</p>
+                <input type="email" class="Input">
+            </div>
+            <div class="phone">
+                <p>휴대전화</p>
+                <div class="call">
+                    <input type="tel" class="Input" placeholder="전화번호 입력">
+                    <button id="callBTN">인증번호</button>
+                </div>
+                <input type="text" class="Input" placeholder="인증번호를 입력하세요">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

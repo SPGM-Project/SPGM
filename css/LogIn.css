@@ -4,6 +4,13 @@
     font-weight: normal;
     font-style: normal;
 }
+a{
+    text-decoration: none;
+}
+.signUp{
+    color: black;
+}
+
 body{
     padding: 0;
     margin: 0;
