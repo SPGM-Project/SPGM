@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'MICEMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEMyungjo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+}
+.login{
+    position: relative;
+    top: 0px;
+}
+.Inputs{
+    height: 1000px;
+}
+.Inputs .Input{
+    width: 300px;
+    height: 30px;
+    border: solid gainsboro 5px;
+    border-radius: 10px;
+}
+.Input:focus{
+    outline: none;
+    background-color: #0ea8f03b;;
+}
+p{
+    font-family: 'MICEMyungjo';
+}
+.phone .Input{
+    margin: 10px 0;
+}
+.phone .call .Input{
+    width: 200px;
+}
+.phone .call #callBTN{
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    border: solid gainsboro 5px;
+    border-radius: 10px;
+    color: gray;
+}
+.phone .call #callBTN:active{
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top:2px;
+}
+.genderSel{
+    display: flex;
+}
+.genderSel .Input{
+    position: relative;
+    top: 10px;
+    width: 50px;
+    margin: 0 90px 0 0; 
+}
