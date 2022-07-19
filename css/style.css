@@ -18,6 +18,25 @@ a {
   color : black;
 }
 
+.look{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-weight: 600;
+  width : 100px;
+  height :30px;
+  background-color: gainsboro;
+  border : 4px solid gray;
+  border-radius: 4px;
+  cursor:pointer;
+  position : absolute;
+  left:0;
+  right: 0;
+  top : 440px;
+  margin : auto;
+}
+
+
+
 header .contents #logo{
   background-image: url("../image/SPGM.png");
   width : 210px;
@@ -27,14 +46,15 @@ header .contents #logo{
   background-repeat: no-repeat;
   box-sizing: border-box;
   border : 10px solid gainsboro;
+  z-index: 1000;
 }
 
 body{
-  height: 4000px;
-  background-color: #fefefe;
+  height: 2980px;
+  background-color: #ececec;
   margin : 0;
   padding: 0;
-  
+
 }
 
 
@@ -62,21 +82,21 @@ header .contents .content{
   height : 119px;
   box-sizing: border-box;
   border-radius: 14px;
-  
+
 }
 
 header .contents .content:nth-child(1):hover{
   transition: 0.1s;
   background-color: #317ec5;
   box-sizing: border-box;
-   border: 4px solid #42A4FF; 
+   border: 4px solid #42A4FF;
 }
 
 header .contents .content:nth-child(2):hover{
   transition: 0.1s;
   background-color: #317ec5;
   box-sizing: border-box;
-   border: 4px solid #42A4FF; 
+   border: 4px solid #42A4FF;
 }
 
 
@@ -84,7 +104,7 @@ header .contents .content:nth-child(4):hover{
   transition: 0.1s;
   background-color: #317ec5;
   box-sizing: border-box;
-   border: 4px solid #42A4FF; 
+   border: 4px solid #42A4FF;
 }
 
 
@@ -100,18 +120,6 @@ header .contents .content a {
   font-family: 'CookieRunOTF-Bold';
 }
 
-header .promotion{
-  border-radius: 12px;
-  position: absolute;
-  top: 135px;
-  right: 30px;
-  width : 160px;
-  height: 280px;
-  background-image: url("../image/promotion.png");
-  background-size: cover;
-  border : 4px solid gainsboro;
-}
-
 
 header .contents #identity{
   background-color: #42A4FF;
@@ -120,9 +128,6 @@ header .contents #identity{
   height : 119px;
 }
 
-header .contents #identity:hover{
-  cursor: pointer;
-}
 
 header .contents .content .identity_image{
   margin-top : 25px;
@@ -168,9 +173,345 @@ header .contents #identity .change_pw .line{
   color : #317BBF;
 }
 
+/* POSTER */
+
+.post{
+  background-color: #ececec;
+  width : 100%;
+  height : 650px;
+  position: relative;
+  top: 120px;
+  left : 0;
+  right : 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post .poster{
+  margin-top: 20px;
+  background-image: url("../image/spgm_poster.png");
+  width : 85%;
+  height: 92%;
+  background-size: cover;
+}
+
+/* COURSE */
+
+
+.course{
+  position:relative;
+  top:250px;
+  height : 950px;
+  background-color: red;
+}
+
+.course .inner{
+  position: relative;
+  width: 100%;
+  height:1450px;
+  background-color: #ececec;
+  display : flex;
+  overflow: hidden;
+}
 
 
 
+.course .inner .front{
+  box-sizing: border-box;
+  width : 520px;
+  height : 520px;
+  border-radius: 24px;
+  background-image: url("../image/front_course.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2s;
+  position : absolute;
+  top: 70px;
+  left : -320px;
+  opacity : 0.1;
+  overflow: hidden;
+
+}
+
+.course .inner .back{
+  box-sizing: border-box;
+  width : 520px;
+  height : 520px;
+  border-radius: 24px;
+  background-image : url("../image/back_course.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+  position : absolute;
+  top: 70px;
+  right : -320px;
+  opacity : 0.1;
+  overflow: hidden;
+}
+
+.course .inner .aos{
+  box-sizing: border-box;
+  width : 520px;
+  height : 520px;
+  border-radius: 24px;
+  background-image : url("../image/android_course.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+  position : absolute;
+  top: 760px;
+  left : -320px;
+  opacity : 0.1;
+  overflow: hidden;
+}
+
+.course .inner .ios{
+  box-sizing: border-box;
+  width : 520px;
+  height : 520px;
+  border-radius: 24px;
+  background-image : url("../image/IOS_course.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+  position : absolute;
+  top: 760px;
+  right : -320px;
+  opacity : 0.1;
+  overflow: hidden;
+}
+
+.course .inner .front.fade-in,
+.course .inner .aos.fade-in{
+  transform: translate(420px , 0);
+  transition: 1s;
+  opacity: 1;
+}
+
+.course .inner .back.fade-in,
+.course .inner .ios.fade-in{
+  transform: translate(-420px , 0);
+  transition: 1s;
+  opacity: 1;
+}
+
+/* CLASS */
+
+.class-notice{
+  position: relative;
+  left : 0;
+  right : 0;
+  top : 700px;
+  margin : auto;
+  width : 400px;
+  height : 80px;
+  font-weight: 600;
+  border-radius: 16px 16px 0 0;
+  background-color: #317BBF;
+  color : white;
+  text-align: center;
+  font-size : 42px;
+  padding-top : 50px;
+}
+
+.class {
+  position:relative;
+  width : 100%;
+  height:600px;
+  top : 700px;
+}
+
+.class .swiper-container{
+  width : 100%;
+  position : absolute;
+  height : 150px;
+  justify-content: space-between;
+  left: 0;
+  right : 0;
+  margin : auto;
+  border : 6px solid  #317BBF;
+  box-sizing: border-box;
+}
+.class .swiper-container .swiper-wrapper{
+  height:100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.class .swiper-container .swiper-wrapper .swiper-slide {
+  opacity : 1;
+  transition: opacity 1s;
+  position: relative;
+  margin : 0 15px;
+}
+
+.class .swiper-container .swiper-wrapper .swiper-slide img{
+  width: 126px;
+  height: 126px;
+  border-radius: 24px;
+  margin-top : 5px;
+}
 
 
+.class .swiper-container2{
+  width : 100%;
+  position : absolute;
+  height : 150px;
+  justify-content: space-between;
+  left: 0;
+  right : 0;
+  margin : auto;
+  top : 150px;
+  border : 6px solid #317BBF;
+  border-top : none;
+  box-sizing: border-box;
+}
+.class .swiper-container2 .swiper-wrapper{
+  height:100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.class .swiper-container2 .swiper-wrapper .swiper-slide {
+  opacity : 1;
+  transition: opacity 1s;
+  position: relative;
+  margin : 0 15px;
+}
+
+.class .swiper-container2 .swiper-wrapper .swiper-slide img{
+  width: 130px;
+  height: 130px;
+  border-radius: 24px;
+  margin-top : 10px;
+}
+
+.btn_course{
+  position:relative;
+  left : 0;
+  right : 0;
+  margin : auto;
+  width : 200px;
+  height : 30px;
+  top : 440px;
+  border-radius: 16px;
+  border : 4px solid gainsboro;
+  background-color: #dadada;
+  color : #0e0e0e;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding-top : 11px;
+  cursor : pointer;
+  
+}
+
+.btn_course:active{
+  transform: scale(0.98);
+
+}
+
+.btn_course a{
+  display: inline-block;
+}
+/* FOOTER */
+
+footer{
+  width: 100%;
+  height : 400px;
+  position: relative;
+  top: 700px;
+  background-color: #4b4b4b;
+}
+
+footer .teamSP{
+  position : absolute;
+  top : 50px;
+  left : 100px;
+  width : 1000px;
+  height : 70px;
+  font-size: 24px;
+  font-weight: 600;
+  color : #fefefe;
+}
+
+footer .member_spgm{
+  position: absolute;
+  top : 100px;
+  left : 97px;
+  width : 1000px;
+  height: 100px;
+}
+
+footer .member_spgm ul{
+  display : flex;
+}
+
+footer .member_spgm ul li{
+  color : #fefefe;
+  font-weight: 500;
+  font-size : 14px;
+  margin : 4px;
+  text-align: center;
+}
+
+footer .member_spgm ul li:after {
+  content: " |";
+  color :#a0a0a0;
+}
+
+/* ROAD */
+.road_design{
+  position: relative;
+  top : 701px;
+  width : 100%;
+  height : 300px;
+  background-color: #a0a0a0;
+}
+
+.road_design .road_map{
+  position : absolute;
+  border-radius: 10px;
+  bottom : 47px;
+  left : 80px;
+  width : 200px;
+  height : 200px;
+  background-image: url("../image/road.png");
+  background-size: cover;
+}
+
+.road_design .road_ment{
+  position : absolute;
+  font-size : 24px;
+  color : #e1e1e1;
+  font-weight: 600;
+  top : 80px;
+  left : 320px;
+  width : 330px;
+  line-height: 40px;
+}
+.road_design .coding{
+  background-image: url("../image/coding.png");
+  background-size: cover;
+  width : 200px;
+  height : 200px;
+  position : absolute;
+  bottom : 47px;
+  left : 830px;
+  border-radius: 10px;
+}
+
+.road_design .coding_ment{
+  position : absolute;
+  font-size : 24px;
+  color : #e1e1e1;
+  font-weight: 600;
+  top : 80px;
+  left : 1080px;
+  width : 330px;
+  line-height: 40px;
+}
