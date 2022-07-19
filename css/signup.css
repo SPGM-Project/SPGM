@@ -70,3 +70,9 @@ p{
     background-color: #0ea8f03b;
     cursor: pointer;
 }
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
