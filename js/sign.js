@@ -3,3 +3,5 @@ function onClick(){
     alert("문자 메시지를 발송했어요");
 }
 messege.addEventListener("click", onClick);
+
+messege.addEventListener("click", onClick);

@@ -8,7 +8,7 @@ function handleAlert(){
 }
 function handleSubmit(event){
     event.preventDefault();
-    if(((id.value=="이승제"))&&((pw.value)==="lsj"))
+    if(((id.value=="apsxhqudtls"))&&((pw.value)==="dkdxmsjqudtls"))
     {
         alert("로그인 되었습니다");
         location.replace("main.html");
