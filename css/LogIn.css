@@ -134,3 +134,6 @@ body{
     position: relative;
     top: 20px;
 }
+input{
+    outline: none;
+}
