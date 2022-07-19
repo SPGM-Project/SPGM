@@ -16,8 +16,19 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'ROKAFSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+header .contents .content .identity_image{
+    margin-left: 0px;
+}
 body{
-    width: 1220px
+    width: max-content;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 header .contents .content:first-child{
     transition: 0.1s;
@@ -46,6 +57,7 @@ li{
 }
 .neck .contents .Content{
     display: flex;
+    width: 2200px;
     margin-bottom: 250px;
 }
 .neck .contents .Content li{
@@ -65,6 +77,8 @@ li{
 }
 .neck .contents .Content dd a{
     color:white;
+    font-size: 30px;
+    font-family: 'ROKAFSansBold';
 }
 .nameFaces{
     position: relative;
